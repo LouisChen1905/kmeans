@@ -4,7 +4,7 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "kmeans/kmeans.h"
+#include "kmeans.h"
 
 namespace {
 

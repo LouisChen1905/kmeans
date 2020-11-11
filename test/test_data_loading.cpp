@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 #include <cmath>
-#include "kmeans/kmeans.h"
+#include "kmeans.h"
 
 namespace {
 

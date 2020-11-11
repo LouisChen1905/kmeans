@@ -1,6 +1,6 @@
 // Author: Felix Duvallet
 
-#include "kmeans.h"
+#include "kmeans/kmeans.h"
 
 #include <algorithm>
 #include <cassert>

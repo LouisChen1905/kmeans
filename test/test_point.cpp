@@ -1,8 +1,7 @@
 // Author: Felix Duvallet
 
 #include <gtest/gtest.h>
-#include "kmeans/point.h"
-#include <math.h>
+#include "point.h"
 
 using namespace std;
 namespace {

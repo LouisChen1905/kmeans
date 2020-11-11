@@ -1,0 +1,16 @@
+# - Config file for the kmeans package
+# It defines the following variables
+#  kmeans_INCLUDE_DIRS - include directories for FooBar
+#  kmeans_LIBRARIES    - libraries to link against
+
+# Compute paths
+get_filename_component(kmeans_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(kmeans_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+if(NOT TARGET kmeans_lib AND NOT kmeans_BINARY_DIR)
+    include("${kmeans_CMAKE_DIR}/kmeansTargets.cmake")
+endif()
+
+# These are IMPORTED targets created by FooBarTargets.cmake
+set(kmeans_LIBRARIES kmeans_lib)
