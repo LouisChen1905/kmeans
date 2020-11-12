@@ -8,6 +8,8 @@
 #include <vector>
 #include <iostream>
 
+namespace kmeans {
+
 class Point {
  public:
   Point() { }
@@ -39,5 +41,6 @@ class Point {
 
   friend std::ostream &operator<<(std::ostream &target, const Point &point);
 };
+}
 
 #endif  // __KMEANS_POINT_H_

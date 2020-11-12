@@ -5,6 +5,7 @@
 
 
 using namespace std;
+using namespace kmeans;
 
 void usage() {
   cout << "Usage: ./kmeans <filename> <k>" << endl;

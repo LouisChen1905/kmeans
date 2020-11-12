@@ -6,6 +6,7 @@
 #include <memory>
 #include "kmeans/kmeans.h"
 
+using namespace kmeans;
 namespace {
 
 class TestEndToEnd : public testing::Test {

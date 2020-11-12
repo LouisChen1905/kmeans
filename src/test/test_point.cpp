@@ -4,6 +4,7 @@
 #include "kmeans/point.h"
 #include <math.h>
 
+using namespace kmeans;
 using namespace std;
 namespace {
 

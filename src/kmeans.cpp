@@ -14,6 +14,9 @@
 
 using namespace std;
 
+namespace kmeans {
+
+
 KMeans::KMeans(int k, int max_iterations)
   : num_clusters_(k),
     max_iterations_(max_iterations) {
@@ -187,4 +190,5 @@ void KMeans::writeMeans(const std::string &filepath) {
   }
   return;
 
+}
 }

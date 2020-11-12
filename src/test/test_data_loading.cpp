@@ -4,6 +4,7 @@
 #include <cmath>
 #include "kmeans/kmeans.h"
 
+using namespace kmeans;
 namespace {
 
 class TestDataLoading : public testing::Test {

@@ -4,6 +4,9 @@
 #include <cmath>
 #include "kmeans/point.h"
 
+namespace kmeans {
+
+
 Point::Point(int num_dimensions, bool init_zeros)
   : cluster_(-1),
     dimensions_(num_dimensions) {
@@ -61,4 +64,5 @@ std::ostream &operator<<(std::ostream &target, const Point &point) {
   }
   target << "]";
   return target;
+}
 }

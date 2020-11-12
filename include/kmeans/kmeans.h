@@ -19,6 +19,8 @@
 
 #include "point.h"
 
+namespace kmeans {
+
 class KMeans {
  public:
   // K is the number of clusters we want. Max iterations is just to prevent
@@ -74,5 +76,7 @@ class KMeans {
     return means_;
   }
 };
+
+}
 
 #endif  // __KMEANS_KMEANS_H__

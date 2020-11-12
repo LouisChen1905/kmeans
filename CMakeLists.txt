@@ -43,6 +43,11 @@ add_library(kmeans_lib SHARED ${SOURCE_FILES})
 set_target_properties(kmeans_lib PROPERTIES PUBLIC_HEADER
     "include/kmeans/kmeans.h;include/kmeans/point.h")
 
+install(TARGETS kmeans_lib
+    EXPORT kmeansTargets
+    LIBRARY DESTINATION lib
+    PUBLIC_HEADER DESTINATION "${INSTALL_INCLUDE_DIR}/kmeans")
+
 export(TARGETS kmeans_lib
     FILE "${PROJECT_BINARY_DIR}/kmeansTargets.cmake")
 
@@ -71,10 +76,6 @@ install(FILES
 install(EXPORT kmeansTargets
     DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
 
-install(TARGETS kmeans_lib
-    EXPORT kmeansTargets
-    LIBRARY DESTINATION lib
-    PUBLIC_HEADER DESTINATION include/kmeans)
 
 add_executable(kmeans src/main.cpp)
 target_link_libraries(kmeans kmeans_lib)
